@@ -29,5 +29,6 @@ UsersRouter.routesConfig(app);
 
 
 app.listen(process.env.PORT, function () {
+    console.log('APP NAME (just for test ENV):', process.env.APP_NAME);
     console.log('app listening at port %s', process.env.PORT);
 });
