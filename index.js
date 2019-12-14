@@ -1,4 +1,4 @@
-const config = require('./common/config/env.config.js');
+require('dotenv').config();
 
 const express = require('express');
 const app = express();
@@ -25,6 +25,6 @@ AuthorizationRouter.routesConfig(app);
 UsersRouter.routesConfig(app);
 
 
-app.listen(config.port, function () {
-    console.log('app listening at port %s', config.port);
+app.listen(process.env.PORT, function () {
+    console.log('app listening at port %s', process.env.PORT);
 });
