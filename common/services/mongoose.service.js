@@ -14,9 +14,9 @@ const options = {
 };
 
 const connectWithRetry = () => {
-    console.log('MongoDB connection with retry')
+    // console.log('MongoDB connection with retry')
 
-    console.log('MONGODB_URI:', process.env.MONGODB_URI);
+    // console.log('MONGODB_URI:', process.env.MONGODB_URI);
 
 
     mongoose.connect(process.env.MONGODB_URI, options).then(()=>{
